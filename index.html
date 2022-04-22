@@ -97,7 +97,7 @@ var initial_screen = {
     timeline0.push({
         type: 'fullscreen',
         fullscreen_mode: true,  //change to true to turn on & false to turn off   
-        on_finish: function (){registration()} // Function to register subject ID
+        on_finish: function (){register_success()} // Function to register subject ID
         })
 
 
@@ -124,8 +124,9 @@ jsPsych.data.addProperties({
 });
 
 
-var assigned_condition = null;
+var assigned_condition = 1;
 var n_conditions = 4;
+start_experiment();
 
 //start_experiment();
 
